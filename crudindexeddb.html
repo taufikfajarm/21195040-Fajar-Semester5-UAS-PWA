@@ -1,0 +1,108 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+    <meta name="theme-color" content="#007bff">
+    <title>M.  Taufik Fajar Maulana</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/fiks512.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <link rel="manifest" href="manifest.json">
+    </head>
+
+    <header id="header" class="header fixed-top mb-4">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+        <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/img/fiks_logo.png" alt="taufikfajar">
+        </a>
+
+        <nav id="navbar" class="navbar">
+            <ul>
+            <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+            <li><a class="nav-link scrollto" href="crudindexeddb.html">IndexedDB</a></li>
+            <li><a class="nav-link scrollto" href="portofolio.html">Portfolio</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+
+    <body>
+
+    <main id="main">
+
+    
+    <div class="container mt-5 my-5">
+    <h2 class="text-center mb-3 my-5">Input Data Mahasiswa</h2>
+        <form id="data-form">
+            <div class="form-group">
+                <input class="form-control my-2" type="text" id="nama" placeholder="Nama" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control mb-3" type="text" id="nim" placeholder="NIM" required>
+            </div>
+        <button class="btn btn-primary" type="submit">Tambah Data</button>
+        </form>
+        
+        <table class="table mt-5" id="data-table">
+        <thead>
+            <tr>
+            <th>Nama</th>
+            <th>NIM</th>
+            <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        </table>
+    </div>
+
+    <div class="modal" tabindex="-1" id="edit-modal">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">Edit Data</h5>
+            </div>
+            <div class="modal-body">
+            <form id="edit-form">
+                <input type="hidden" id="edit-id">
+                <input class="form-control mb-2" type="text" id="edit-nama" required>
+                <input class="form-control mb-4" type="text" id="edit-nim" required>
+                <button class="btn btn-primary" type="submit">Simpan</button>
+            </form>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="scriptindexeddb.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

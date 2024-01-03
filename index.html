@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="theme-color" content="#007bff">
+  <title>M.  Taufik Fajar Maulana</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/fiks512.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/fiks_logo.png" alt="taufikfajar">
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="crudindexeddb.html">IndexedDB</a></li>
+          <li><a class="nav-link scrollto" href="portofolio.html">Portfolio</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Progressive Web App</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">M Taufik Fajar Maulana (21195040)</h2>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+              <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Get Started</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+              <div class="mt-4">Notification data will receive here if the app is open and focused.</div>
+              <div class="message" style="min-height: 80px;"></div>
+              <div id="deviceToken">Device Token: Loading...</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/hero-img.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h3>For What?</h3>
+              <h2>Project ini dibuat untuk memenuhi tugas Ujian Akhir Semester Mata Kuliah Pemrograman Perangkat Bergerak.</h2>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>FlexStart</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script src="main.js"></script>
+
+  <script src="script.js"></script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/firebase-messaging-sw.js')
+        .then(function (registration) {
+          console.log('Service Worker registered with scope:', registration.scope);
+        }).catch(function (error) {
+          console.error('Service Worker registration failed:', error);
+        });
+    }
+  </script>
+
+<!-- awal -->
+
+<script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-messaging-compat.js"></script>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/firebase-messaging-sw.js')
+      .then(function (registration) {
+        console.log('Service Worker registered with scope:', registration.scope);
+      }).catch(function (error) {
+        console.error('Service Worker registration failed:', error);
+      });
+  }
+
+  const firebaseConfig = {
+      apiKey: "AIzaSyDvVfoqGbIKXdS4ANDJJ4OHdmKrFViLJzQ",
+      authDomain: "uas-pushnotification.firebaseapp.com",
+      projectId: "uas-pushnotification",
+      storageBucket: "uas-pushnotification.appspot.com",
+      messagingSenderId: "539478183006",
+      appId: "1:539478183006:web:a029286728272d76af38cf"
+    };
+
+  const app = firebase.initializeApp(firebaseConfig);
+  const messaging = app.messaging();
+
+  messaging.getToken({ vapidKey: "BJtMtuuMg0z2ZtPXY3VRQCfsCljzkmxCgB4fopXHL7-SotT4s7z-iMlgDJXkaACpkCAyf5K38jYb3KBQD5Elklk" })
+    .then((currentToken) => {
+      if (currentToken) {
+        console.log('Device Token:', currentToken);
+        // Display the device token in the specified div
+        document.getElementById('deviceToken').textContent = 'Device Token: ' + currentToken;
+      } else {
+        console.log('No registration token available.');
+        document.getElementById('deviceToken').textContent = 'Device Token: Not available';
+      }
+    }).catch((error) => {
+      console.error('An error occurred while retrieving token:', error);
+      document.getElementById('deviceToken').textContent = 'Device Token: Error retrieving token';
+    });
+
+  messaging.onMessage((payload) => {
+    console.log('Message received:', payload);
+    const messagesElement = document.querySelector('.message');
+    const dataHeaderElement = document.createElement('h5');
+    const dataElement = document.createElement('pre');
+    dataElement.style = "overflow-x: hidden;";
+    dataHeaderElement.textContent = "Message Received:";
+    dataElement.textContent = JSON.stringify(payload, null, 2);
+    messagesElement.appendChild(dataHeaderElement);
+    messagesElement.appendChild(dataElement);
+  });
+</script>
+
+<!-- akhir -->
+
+
+</body>
+
+</html>
